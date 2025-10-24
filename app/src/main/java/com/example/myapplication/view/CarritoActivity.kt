@@ -1,4 +1,4 @@
 package com.example.myapplication.view
 
-class RegistroActivity {
+class CarritoActivity {
 }
