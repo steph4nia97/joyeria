@@ -60,7 +60,8 @@ dependencies {
     implementation("androidx.compose.material3:material3:1.3.0")
     debugImplementation("androidx.compose.ui:ui-tooling")
     androidTestImplementation("androidx.compose.ui:ui-test-junit4")
-    debugImplementation("androidx.compose.ui:test-manifest")
+    debugImplementation("androidx.compose.ui:ui-test-manifest")
+
 
     // Room (SQLite)
     implementation("androidx.room:room-ktx:2.6.1")

@@ -6,6 +6,7 @@ import android.widget.EditText
 import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.lifecycle.lifecycleScope
+import com.example.myapplication.view.MainActivity
 import com.example.myapplication.R
 import com.example.myapplication.model.BaseDatosJoyeria
 import com.example.myapplication.model.Prefs
@@ -46,7 +47,7 @@ class LoginActivity : ComponentActivity() {
                 val usuario = db.usuarioDao().buscarPorCorreo(correo)
                 val hash = Seguridad.sha256(contrasena)
 
-                if (usuario != null && usuario.hashContrasena == hash) {
+                if (usuario != null && usuario.contrasena == hash) {
                     Prefs.setSesion(this@LoginActivity, correo)
                     Toast.makeText(this@LoginActivity, "Bienvenida/o, ${usuario.nombre}", Toast.LENGTH_SHORT).show()
                     startActivity(Intent(this@LoginActivity, MainActivity::class.java))

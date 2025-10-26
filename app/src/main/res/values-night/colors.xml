@@ -1,0 +1,7 @@
+<resources>
+    <!-- Paleta principal - modo oscuro -->
+    <color name="color_gold">#FFD700</color>
+    <color name="color_background_light">#121212</color>
+    <color name="color_text_dark">#FFFFFF</color>
+    <color name="color_accent">#C8A951</color>
+</resources>
